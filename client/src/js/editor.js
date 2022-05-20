@@ -4,6 +4,8 @@ import { header } from './header';
 
 let obj;
 
+
+
 export default class {
   constructor() {
     const localData = localStorage.getItem('content');
@@ -13,10 +15,18 @@ export default class {
       throw new Error('CodeMirror is not loaded');
     }
 
+    const themes = [
+      "ambiance",
+      "ayu-mirage"
+    ];
+    
+    const theme = themes[Math.floor(Math.random()*themes.length)]
+
     this.editor = CodeMirror(document.querySelector('#main'), {
       value: '',
       mode: 'javascript',
       theme: 'monokai',
+      // theme:theme,
       lineNumbers: true,
       lineWrapping: true,
       autofocus: true,
