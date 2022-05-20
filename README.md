@@ -64,4 +64,4 @@ This app is covered by the MIT license. For more information, visit https://open
 
 ## Live Link
 
-www.key-smashr.herokuapp.com
+[Application](https://key-smashr.herokuapp.com/)
